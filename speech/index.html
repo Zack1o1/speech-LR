@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="nepal,python,speech-lr,speech,tkinter,pyinstaller,programming">
+    <meta name="Author" content="Lalit Rajbanshi">
+    <meta name="description" content="You can type English letters, words, or sentences in the text box and click on the Speak button to read the text aloud.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-LR</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            background-color: rgba(0, 0, 0, 0.281);
+            min-width: fit-content;
+        }
+        .container{
+            letter-spacing: 1.2px;
+            line-height: 20px;
+            font-weight: bold;
+        }
+        .animation{
+            height: 20px;
+            width: 100%;
+            background-color: black;
+            color: rgb(37, 199, 37);
+            text-align: center;
+            user-select: none;
+        }
+        .header{
+            color: blue;
+            padding: 20px;
+            text-align:center;
+            font-size: 22px;
+        }
+        .description{
+            padding:0 20px;
+            margin: 0 150px;
+            line-height: 35px;
+        }
+        .author,.date,.ver{
+            color: green;
+        }
+       .red{
+        color: rgba(255, 0, 0, 0.541);
+       }
+       .contact{
+        color: green;
+       }
+       .link{
+        text-align: center;
+        font-size: 30px;
+        padding-top: 20px;
+        border: 2px solid;
+        background-color: black;
+        color: green;
+        user-select: none;
+       }
+       .download_btn{
+        background-color: green;
+        padding: 10px;
+        margin: 10px;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 20px;
+        transition: .8s;
+        font-weight: bold;
+       }
+       .download_btn:hover{
+        background-color: white;
+        color: green;
+        transition: .8s;
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animation"><span class="text">Speech-LR, App's Author & Publisher:Lalit Rajbanshi &COPY;2023 Free Download</span></div>
+        <div class="header"><h1>Speech-LR</h1></div>
+        <div class="description">
+               <span class="title" data-author="Lalit Rajbanshi" style="color:blue"> *This app is created by <span class="author">Lalit Rajbanshi</span></span><br>
+               <span style="color:blue">*Created Date:<span class="date" data-date="2023,May 6"> May 6, 2023, Saturday</span></span><br>
+               <span class="version" style="color:blue" data-version="1.0">*Version <span class="ver">1.0</span></span><br>
+            <span class="usage-resources">
+            *This speech-LR app is made using Python and includes the following frameworks:<br>
+                1. <span class="red">pyttsx3</span> for working with speech recognition<br>
+                2. <span class="red">tkinter</span> for GUI development<br>
+                3. <span class="red">pyinstaller</span> for conversion to an executable file<br>
+            </span>
+            <span class="features">
+                <span style="color:blue">*Features:</span> <br>
+                1. You can type English letters, words, or sentences in the text box and click on the "Speak" button to read the text aloud.<br>
+                2. You can copy and paste English text or paragraphs and listen to them.<br>
+                3. You can also save the audio by clicking on the "Save Audio" button.<br>
+            </span>
+            <span class="contact">
+            *Note: This version 1.0 is a simple read-aloud app with limited features.<br>
+            In the next version 1.1, more features will be added. Please be patient. <br>
+            If you have any suggestions, feedback, or questions, please feel free to contact me:<br>
+            
+                <span style="color: blue;">Facebook:</span> <a href="https://www.facebook.com/lalit.rajbanshi.3158">https//www.facebook.com/lalit.rajbanshi.3158</a><br>
+                <span style="color: blue;">Linkedin:</span> <a href="https://www.linkedin.com/in/lalit-rajbanshi-490837265">https://www.linkedin.com/in/lalit-rajbanshi-490837265</a><br>
+            </span>
+        </div>
+        <div class="link">
+            <p>Speech-LR v.1.0</p>
+            <a href="speech-LR.exe"><button class="download_btn" id="download-btn">Download</button></a>
+    </div>
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgentData)) {
+          let downloadBtn = document.getElementById("download-btn");
+          downloadBtn.disabled = true;
+          downloadBtn.style.pointerEvents = "none";
+        }
+        </script>
+</body>
+</html>
+<!-- =========================================== LALIT RAJBANSHI ========================================== -->
